@@ -1,0 +1,217 @@
+<!doctype html><html lang="ru"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AI, архитектура и риски · Альфа Бьюти</title>
+<meta name="description" content="Альфа Бьюти, стратегия для молодых бьюти-предпринимателей 17-25 в Платёжном бизнесе Альфа-Банка. Слайд 7: AI и риски.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--red:#EF3124;--dred:#7A0000;--ink:#141414;--grey:#6f6a63;--line:#e7e4de;--card:#f7f6f3;--cream:#fffdf7}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:#fff;line-height:1.55}
+a{color:var(--red);text-decoration:none}
+a:hover{text-decoration:underline}
+.topbar{position:sticky;top:0;z-index:20;background:var(--ink);color:#fff;display:flex;align-items:center;gap:.6rem;padding:.7rem 1rem;border-bottom:3px solid var(--red)}
+.topbar .logo{font-family:Oswald,Impact,sans-serif;font-weight:700;letter-spacing:.5px;font-size:1.15rem}
+.topbar .logo b{color:var(--red)}
+.topbar .tag{margin-left:auto;font-size:.72rem;color:#c9c4bc;text-transform:uppercase;letter-spacing:.5px}
+.wrap{max-width:900px;margin:0 auto;padding:0 1rem}
+nav.chips{display:flex;gap:.4rem;overflow-x:auto;padding:.6rem 1rem;background:var(--cream);border-bottom:1px solid var(--line);-webkit-overflow-scrolling:touch}
+nav.chips a{flex:0 0 auto;font-family:Oswald,sans-serif;font-size:.8rem;text-transform:uppercase;letter-spacing:.4px;color:var(--grey);background:#fff;border:1px solid var(--line);border-radius:999px;padding:.32rem .7rem}
+nav.chips a.active{background:var(--red);color:#fff;border-color:var(--red)}
+main{padding:1.4rem 0 2.5rem}
+.kicker{font-family:Oswald,sans-serif;text-transform:uppercase;letter-spacing:1px;color:var(--red);font-weight:600;font-size:.82rem;margin:0 0 .2rem}
+h1{font-family:Oswald,Impact,sans-serif;font-weight:700;font-size:2rem;line-height:1.1;margin:.1rem 0 .3rem}
+h2{font-family:Oswald,sans-serif;font-weight:600;font-size:1.28rem;margin:1.8rem 0 .5rem;padding-top:.6rem;border-top:2px solid var(--line)}
+h3{font-family:Oswald,sans-serif;font-weight:600;font-size:1.05rem;margin:1.1rem 0 .3rem;color:var(--dred)}
+p,li{font-size:1rem}
+blockquote{margin:1rem 0;padding:.7rem 1rem;background:var(--card);border-left:4px solid var(--red);border-radius:6px;font-size:1.02rem}
+blockquote p{margin:0}
+table{width:100%;border-collapse:collapse;margin:1rem 0;font-size:.92rem;display:block;overflow-x:auto}
+th{background:var(--ink);color:#fff;font-family:Oswald,sans-serif;font-weight:600;text-align:left;padding:.5rem .6rem}
+td{padding:.5rem .6rem;border-bottom:1px solid var(--line);vertical-align:top}
+tr:nth-child(even) td{background:var(--card)}
+.lead{font-size:1.12rem;color:#333}
+.stat{display:inline-block;font-family:Oswald,sans-serif;font-weight:700;color:var(--red);font-size:1.05em}
+pre{background:var(--ink);color:#e8e6e1;padding:.85rem 1rem;border-radius:10px;overflow-x:auto;-webkit-overflow-scrolling:touch;font-size:.78rem;line-height:1.4;margin:1rem 0;max-width:100%}
+pre code{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,"Liberation Mono",monospace;white-space:pre;background:none;color:inherit;padding:0;border:0}
+code{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:.88em;background:var(--card);padding:.06rem .32rem;border-radius:4px;word-break:break-word}
+img{max-width:100%;height:auto}
+hr{border:0;border-top:1px solid var(--line);margin:1.6rem 0}
+.pager{display:flex;justify-content:space-between;gap:1rem;margin-top:2rem;padding-top:1rem;border-top:2px solid var(--line);font-family:Oswald,sans-serif;text-transform:uppercase;font-size:.82rem;letter-spacing:.5px}
+.pager a{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:.5rem .8rem;max-width:46%}
+footer{background:var(--ink);color:#c9c4bc;padding:1.4rem 1rem;font-size:.8rem}
+footer b{color:#fff}
+footer .sl{color:var(--red);font-family:Oswald,sans-serif;font-weight:600}
+@media(min-width:640px){h1{font-size:2.4rem}table{display:table}}
+@media(max-width:480px){.wrap{padding:0 .8rem}h1{font-size:1.7rem}h2{font-size:1.15rem}pre{font-size:.66rem;padding:.6rem .7rem}.lead{font-size:1.05rem}td,th{padding:.45rem .5rem}}
+</style></head><body>
+<div class="topbar"><span class="logo"><b>Альфа</b> Бьюти</span><span class="tag">Вики команды Molly</span></div>
+<nav class="chips"><a href="index.html" class="">1·О проекте</a><a href="p2.html" class="">2·Команда</a><a href="p3.html" class="">3·Проблема</a><a href="p4.html" class="">4·Аудитория</a><a href="p5.html" class="">5·Инсайт</a><a href="p6.html" class="">6·Стратегия</a><a href="p7.html" class="active">7·AI и риски</a><a href="p8.html" class="">8·Продукты</a><a href="p9.html" class="">9·Экономика</a><a href="p10.html" class="">10·Внедрение</a><a href="p11.html" class="">11·Рынок</a><a href="p12.html" class="">12·Косметология</a><a href="p13.html" class="">13·Серый и белый</a><a href="p14.html" class="">14·AI-флайвил</a><a href="p15.html" class="">15·Тарифы</a><a href="p16.html" class="">16·MVP</a></nav>
+<div class="wrap"><main><p class="kicker">Слайд 7 · Стратегия · AI</p>
+
+<h1 id="ai">AI, архитектура и риски</h1>
+<p class="lead">AI здесь работает как co-pilot, встроенный в путь мастера. Он готовит черновик и ссылку на оплату, но мастер остаётся лицом диалога и жмёт «отправить». Ниже роли AI, техническая архитектура, каналы связи под ограничениями мессенджеров и полный реестр рисков.</p>
+
+<h2 id="1-ai">1. Четыре роли AI</h2>
+<table>
+<thead>
+<tr>
+<th>Роль</th>
+<th>Что делает</th>
+<th>Продукт банка</th>
+<th>Боль, которую закрывает</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Администратор</strong></td>
+<td>помогает отвечать клиентам, готовит ссылку или QR на предоплату и вежливое напоминание; мастер подтверждает отправку</td>
+<td>эквайринг, платёжная ссылка, СБП</td>
+<td>no-show, «неловко просить»</td>
+</tr>
+<tr>
+<td><strong>Финдиректор</strong></td>
+<td>на данных эквайринга (плюс опц. фото чека) считает маржу, налог к уплате, откладывает на налог, предупреждает о кассовом разрыве</td>
+<td>данные эквайринга и касса</td>
+<td>«зарабатываю ли я?»</td>
+</tr>
+<tr>
+<td><strong>Удержание</strong></td>
+<td>сегментирует клиентов по чекам, знает периодичность, подсказывает повторную запись; если слот слетел, предлагает написать тем, кто интересовался</td>
+<td>данные платежей</td>
+<td>клиенты не возвращаются</td>
+</tr>
+<tr>
+<td><strong>Наставник роста</strong></td>
+<td>по динамике оборота подсказывает переход на ИП, «Подели» на аппарат, повышение цены</td>
+<td>скоринг на обороте</td>
+<td>рост, капитал</td>
+</tr>
+</tbody>
+</table>
+<p>Пример диалога. Клиент: «сколько маникюр?» Черновик от AI мастеру: «Гель-лак 1 500 ₽, плюс укрепление 500 ₽. Свободно завтра 15:00 или 18:00. Записать?» После подтверждения: «Готово! Бронь закрепим предоплатой 450 ₽: [ссылка]. Напомню за день».</p>
+<p>Принцип: AI помогает мастеру и остаётся ассистентом, решение всегда за человеком. Явная маркировка «ассистент», настройка тона. Для премиум-косметологии агентная переписка выключена по умолчанию, ведь там личный контакт это главный актив.</p>
+<h2 id="2-5">2. Карта компонентов (5 слоёв)</h2>
+<ol>
+<li><strong>Клиентские поверхности.</strong> Супер-апп или PWA мастера; web-витрина записи для клиента (ссылка из SMS) плюс VK/Max-бот; оплата по СБП-QR или платёжной ссылке.</li>
+<li><strong>AI-слой.</strong> Co-pilot (LLM, RAG, function calling), финдиректор, удержание, guardrails, self-hosted LLM.</li>
+<li><strong>Payment core.</strong> Эквайринг, СБП C2B, касса, предоплата-ссылка, сплит, netmonet, «Подели».</li>
+<li><strong>Данные и интеграции.</strong> Core banking (счёт и оборот), ФНС «Мой налог» (ФЗ-422), скоринг, авторегистрация СЗ, booking/CRM store.</li>
+<li><strong>Compliance-слой.</strong> 152-ФЗ, 38-ФЗ, шифрование, аудит, уведомление РКН.</li>
+</ol>
+<h2 id="3">3. Каналы связи: работает, даже когда мессенджеры недоступны</h2>
+<p>Telegram и WhatsApp в РФ ограничены, и боты конкурентов, живущие поверх них по API, при блокировках ломаются. У банка есть устойчивый каскад доставки нотификаций, приоритет по надёжности и стоимости.</p>
+<ol>
+<li><strong>Push в приложение Альфы.</strong> Если клиент мастера сам клиент Альфы (розница около 36-40 млн), напоминание или запрос оплаты идёт прямо в его установленное приложение (инфраструктура «Альфа-Чек»): около 0 ₽, без мессенджеров.</li>
+<li><strong>Push в наш PWA или супер-апп.</strong> Тоже около 0 ₽.</li>
+<li><strong>SMS как fallback</strong> для остальных: банковская ставка около 2,4 ₽ (малый бизнес платит 5,7-11 ₽).</li>
+</ol>
+<p>Двусторонняя связь без Telegram и WhatsApp строится на web-витрине или PWA: клиент получает SMS со ссылкой, открывает страницу в браузере, выбирает слот и платит по СБП. Мессенджер-канал это VK или Max. Сервисные напоминания о записи по закону не считаются рекламой (38-ФЗ).</p>
+<h2 id="4-llm-data-">4. Своя LLM и data-флайвил</h2>
+<p>Почему self-hosted open-weight LLM в периметре банка (T-Lite 7-8B, Apache 2.0, либо Qwen2.5 плюс Saiga):</p>
+<ol>
+<li>ПДн клиентов, а 152-ФЗ запрещает первичную обработку за рубежом, поэтому внешний облачный OpenAI или Claude нельзя.</li>
+<li>API конкурентов (GigaChat это Сбер, YandexGPT это Яндекс) банк тоже не возьмёт, отдавать данные конкуренту неприемлемо.</li>
+<li>На масштабе self-host дешевле API примерно в 2-3 раза (около 0,05 ₽ за диалог).</li>
+<li>Контроль и файнтюн под бьюти-домен.</li>
+</ol>
+<p>Data-флайвил: больше оборота через нас, значит умнее co-pilot и точнее скоринг, значит ниже дефолт и отток, значит мастер растёт на нашем финансировании и ещё глубже встроен.</p>
+<p>Стек: инференс на GPU (vLLM), event-driven backend на вебхуках платежей, PWA-фронтенд, РФ-хостинг, шифрование, DLP.</p>
+<h2 id="5">5. Риски и митигации</h2>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Риск</th>
+<th>Категория</th>
+<th>Митигация</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>R1</td>
+<td>Утечка ПДн клиентов, оборотный штраф до 3% выручки (152-ФЗ)</td>
+<td>юр., регул.</td>
+<td>данные только в РФ; отдельные согласия; минимизация хранимого; роль обработчика в оферте; шифрование и DLP; уведомление РКН</td>
+</tr>
+<tr>
+<td>R2</td>
+<td>Рассылки без согласия, штраф ФАС до 1 млн ₽ (38-ФЗ)</td>
+<td>юр.</td>
+<td>двойной opt-in; сервисные напоминания отделены от маркетинга; лог согласий; unsubscribe</td>
+</tr>
+<tr>
+<td>R3</td>
+<td>Приём за нелицензированную косметологию</td>
+<td>регул., репут.</td>
+<td>KYC-проверка медлицензии; разделяем бытовые и медицинские услуги</td>
+</tr>
+<tr>
+<td>R4</td>
+<td>AI вводит клиента в заблуждение или даёт некорректные советы</td>
+<td>репут.</td>
+<td>дисклеймер «отвечает ассистент»; запрет AI на мед. и юр. утверждения; модерация; ответственность в оферте</td>
+</tr>
+<tr>
+<td>R5</td>
+<td>«Серый» сегмент, претензии по 115-ФЗ</td>
+<td>регул., репут.</td>
+<td>продукт как инструмент обеления (чеки, лимит НПД); мониторинг подозрительных операций</td>
+</tr>
+<tr>
+<td>R6</td>
+<td>Тонкая маржа эквайринга (около 0,2-0,4 п.п.)</td>
+<td>фин.</td>
+<td>двойная монетизация: подписка, партнёрка, финтех</td>
+</tr>
+<tr>
+<td>R7</td>
+<td>Маркировка и ГОСТ 2026 усложняют жизнь мастеру</td>
+<td>регул.</td>
+<td>встроить учёт маркировки в кассу; ГОСТ-чеклист как фича AI</td>
+</tr>
+<tr>
+<td>R8</td>
+<td>Превышение лимита НПД без перехода на ИП</td>
+<td>регул.</td>
+<td>авто-мониторинг лимита и подсказка перехода на ИП</td>
+</tr>
+<tr>
+<td>R9</td>
+<td>Ограничение мессенджеров ломает бот-каналы</td>
+<td>тех.</td>
+<td>SMS банка, web/PWA-витрина, VK/Max; превращаем риск в преимущество</td>
+</tr>
+<tr>
+<td>R10</td>
+<td>Конкурентный ответ Т-Банка и Сбера</td>
+<td>рынок</td>
+<td>скорость, бьюти-фокус, связка netmonet и «Подели», контур НПД/ФНС</td>
+</tr>
+<tr>
+<td>R11</td>
+<td>Восприятие lock-in как «ловушки»</td>
+<td>репут., регул.</td>
+<td>удерживаем ценностью: право на экспорт данных и лёгкий выход, без штрафов за уход и навязывания продуктов и кредитов</td>
+</tr>
+<tr>
+<td>R12</td>
+<td>Конфликт «capture против лимита НПД» (мастер прячет оборот у 2,4 млн)</td>
+<td>продукт</td>
+<td>момент подхода к лимиту это точка апселла: AI-наставник ведёт переход на ИП</td>
+</tr>
+</tbody>
+</table>
+<p>Про удержание честно: мы удерживаем клиента ценностью (AI, данные, дешёвый кредит). Штрафов за уход нет, у мастера остаётся право на экспорт данных и лёгкий выход, и это само по себе строит доверие.</p>
+<h2 id="6-compliance-">6. Compliance-архитектура</h2>
+<ul>
+<li>Data residency: все ПДн клиентов в российском ЦОД, первичный сбор только в РФ.</li>
+<li>Роль: банк как обработчик по поручению мастера (мастер это оператор), разграничение в оферте, плюс минимизация ПДн, отдельные согласия, уведомление РКН.</li>
+<li>Технически: шифрование, DLP, аудит-лог доступа, процедура уведомления РКН, минимальный набор данных (телефон и история визитов), TTL на переписку.</li>
+</ul>
+<hr>
+
+<p><em>Источники: T-Lite 7-8B (Apache 2.0); 152-ФЗ, 38-ФЗ, 115-ФЗ, ФЗ-422; ГОСТ Р 72319-2025; alfabank.ru (скоринг 97% авто, розница 36-40 млн); Bain 2023.</em></p><div class="pager"><a href="p6.html">← Стратегия</a><a href="p8.html">Продукты →</a></div></main></div>
+<footer class="wrap"><b>Альфа Бьюти</b> · подробная вики к презентации команды Molly.</footer>
+</body></html>
